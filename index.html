@@ -7,8 +7,13 @@
     <title>FaceScan</title>
     
 <style>
-    video{
-        background-color: black;
+    video,canvas{
+
+        position: absolute; 
+        border: 2px solid red;   
+    }
+    {
+        
     }
     body{
         background-color: aqua;
@@ -17,7 +22,9 @@
 
 </head>
 <body>
-    <video id="preview"></video>
+    
+    <video id="video" width="320" height="240" preload autoplay loop muted></video>
+    <canvas  id="canvas" width="320" height="240"></canvas>
 
 
 
@@ -26,7 +33,6 @@
 </body>
 <script type="text/javascript" src="tracking-min.js"></script>
 <script type="text/javascript" src="data/face-min.js"></script>
-
 <script type="text/javascript" src="script.js"></script>
 
 </html>
